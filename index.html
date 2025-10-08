@@ -140,10 +140,11 @@
             background-color: #C2410C; /* Orange-700 */
         }
 
+        /* Aumento do botão do WhatsApp */
         .btn-whatsapp {
             background-color: #25D366; /* WhatsApp green */
             color: white;
-            padding: 0.75rem 1.5rem;
+            padding: 1rem 2rem; /* Aumentado */
             border-radius: 0.5rem;
             font-weight: bold;
             transition: background-color 0.3s ease;
@@ -151,6 +152,7 @@
             display: inline-flex; /* To align icon and text */
             align-items: center;
             gap: 0.5rem; /* Space between icon and text */
+            font-size: 1.125rem; /* Aumentado */
         }
         .btn-whatsapp:hover {
             background-color: #1DA851; /* Darker WhatsApp green */
@@ -271,7 +273,7 @@
         /* Story text styling */
         .story-text {
             color: #f8f5ed;
-            font-size: 0.55rem;
+            font-size: 0.7rem; /* Melhorado para mobile */
             line-height: 1.2;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
             column-count: 2;
@@ -408,7 +410,9 @@
     </nav>
 
     <!-- Hero Section - Main Wallpaper Image -->
-    <section id="top" class="hero-section w-full" style="background-image: url('https://static.wikia.nocookie.net/h__/images/1/1d/1952DonaldDuckTrickOrTreat.jpg/revision/latest?cb=20141027155204&path-prefix=halloween');">
+    <section id="top" class="hero-section w-full" 
+        style="background-image: url('https://static.wikia.nocookie.net/h__/images/1/1d/1952DonaldDuckTrickOrTreat.jpg/revision/latest?cb=20141027155204&path-prefix=halloween');">
+        <!-- ATENÇÃO: Este link é instável e pode quebrar no Vercel (hotlinking). Se a imagem sumir, use um link de hospedagem estável (Imgur/Cloudinary). -->
         <div class="hero-overlay">
             <!-- Countdown Timer -->
             <div class="mb-4 text-center p-4 bg-black bg-opacity-50 rounded-lg shadow-lg">
@@ -422,13 +426,15 @@
                 Halloween dos Ferreira
             </h1>
             <p class="text-2xl md:text-4xl font-semibold italic mb-2 animate-fade-in-slide-up" style="animation-delay: 0.3s;">
-                Uma noite arrepiante, uma celebração única!
+                Chupa-cabra, loira do banheiro, ET Bilu e outras lendas BR nos aguardam
             </p>
             <p class="text-sm text-white mb-8 animate-fade-in-slide-up" style="animation-delay: 0.4s;">
                 (a lenda começou na Rua da Amendoeira, 31)
             </p>
-            <a href="https://wa.me/5511958193150" target="_blank" class="btn-primary animate-fade-in-slide-up" style="animation-delay: 0.5s;">
-                Confirme sua presença no WhatsApp!
+            <!-- BOTÃO PRINCIPAL: LINK AGORA VAI PARA O GEMINI -->
+            <a href="https://gemini.google.com/gem/1RzpoMScspGxzyxVmv7koVhyoC6Q4zI4v?usp=sharing" target="_blank" class="btn-whatsapp">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square text-white"><path d="M21 15a2 3 0 0 1-2 2H7l-4 4V5a2 3 0 0 1 2-2h14a2 3 0 0 1 2 2z"/></svg>
+                Confirme Sua Presença Aqui e o Lanche que Levará!
             </a>
         </div>
     </section>
@@ -442,7 +448,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg md:text-xl text-gray-300">
                 <div class="bg-gray-800 p-6 rounded-lg shadow-md border-l-4 border-purple-500">
                     <p class="font-bold text-purple-400 mb-2">Data e hora:</p>
-                    <p>🗓️ Sábado, 27/10* ou Domingo, 02/11*</p>
+                    <p>🗓️ Domingo, 02/11</p>
                     <p>⏰ A partir das 14h</p>
                 </div>
                 <div class="bg-gray-800 p-6 rounded-lg shadow-md border-l-4 border-purple-500">
@@ -521,14 +527,15 @@
             <p class="text-lg md:text-xl text-gray-400 mb-4">
                 Confirme sua presença e o que vai trazer com:
                 <span class="block mt-4 text-3xl font-bold text-pink-500 mb-4">
-                    📞 Flávia, Francis ou Júnior
+                    🤖 SebastIAna, nossa IA da Gota Serena
                 </span>
             </p>
-            <a href="https://wa.me/5511958193150" target="_blank" class="btn-whatsapp">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-whatsapp"><path d="M16.7 8A3 3 0 0 0 14 6.3V2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2v4L17 18h3a2 2 0 0 0 2-2V9.8c-.9.8-2.1 1.2-3.3 1.2z"/></svg>
-                    Quero participar!
-                </a>
-            </section>
+            <!-- Botão de Confirmação (AUMENTADO e com link Gemini) -->
+            <a href="https://gemini.google.com/gem/1RzpoMScspGxzyxVmv7koVhyoC6Q4zI4v?usp=sharing" target="_blank" class="btn-whatsapp">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square text-white"><path d="M21 15a2 3 0 0 1-2 2H7l-4 4V5a2 3 0 0 1 2-2h14a2 3 0 0 1 2 2z"/></svg>
+                Confirme Sua Presença Aqui e o Lanche que Levará!
+            </a>
+        </section>
 
         <!-- New Section: Spotify Playlist -->
         <section id="spotify-playlist" class="mb-8 p-6 rounded-xl bg-gray-800 shadow-lg animate-fade-in-slide-up" style="animation-delay: 1.0s;">
@@ -540,7 +547,7 @@
             </p>
             <div class="text-center mt-6">
                 <a href="https://open.spotify.com/playlist/5pHBVnmWAXmJgS3CgUVio1?si=0bfc38b76c3e4ecc&pt=16fbebed3b2e4d584f95ea8ab8afcd52" target="_blank" class="btn-spotify">
-                    <img src="https://www.pngfind.com/pngs/m/10-103829_picture-black-and-white-stock-spotify-icon-free.png" alt="" class="w-6 h-6">
+                    <img src="https://www.pngfind.com/pngs/m/10-103829_picture-black-and-white-stock-spotify-icon-free.png" alt="Spotify Icon" class="w-6 h-6">
                     Adicionar Músicas no Spotify!
                 </a>
             </div>
@@ -555,7 +562,7 @@
                 Teremos karaoke com banda! Coloque as músicas que gostaria que tocássemos (faremos o possível, rs). Jr levará violão, guitarra, mics e Cajon.
             </p>
             <div class="text-center mt-6">
-                <a href="https://wa.me/5511958193150" target="_blank" class="btn-whatsapp">
+                <a href="https://gemini.google.com/gem/1RzpoMScspGxzyxVmv7koVhyoC6Q4zI4v?usp=sharing" target="_blank" class="btn-whatsapp">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square text-white"><path d="M21 15a2 3 0 0 1-2 2H7l-4 4V5a2 3 0 0 1 2-2h14a2 3 0 0 1 2 2z"/></svg>
                     Sugerir Músicas
                 </a>
@@ -695,8 +702,8 @@
             </div>
             <!-- WhatsApp button added here -->
             <div class="text-center mt-8">
-                <a href="https://wa.me/5511958193150" target="_blank" class="btn-whatsapp">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-whatsapp"><path d="M16.7 8A3 3 0 0 0 14 6.3V2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2v4L17 18h3a2 2 0 0 0 2-2V9.8c-.9.8-2.1 1.2-3.3 1.2z"/></svg>
+                <a href="https://gemini.google.com/gem/1RzpoMScspGxzyxVmv7koVhyoC6Q4zI4v?usp=sharing" target="_blank" class="btn-whatsapp">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square text-white"><path d="M21 15a2 3 0 0 1-2 2H7l-4 4V5a2 3 0 0 1 2-2h14a2 3 0 0 1 2 2z"/></svg>
                     Quero participar!
                 </a>
             </div>
@@ -717,8 +724,8 @@
                 <p class="text-xl md:text-2xl text-gray-300 mb-4">
                     Não encontrou algo legal? Faça um pix que agilizamos para você!
                 </p>
-                <a href="https://wa.me/5511958193150" target="_blank" class="btn-whatsapp">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-whatsapp"><path d="M16.7 8A3 3 0 0 0 14 6.3V2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2v4L17 18h3a2 2 0 0 0 2-2V9.8c-.9.8-2.1 1.2-3.3 1.2z"/></svg>
+                <a href="https://gemini.google.com/gem/1RzpoMScspGxzyxVmv7koVhyoC6Q4zI4v?usp=sharing" target="_blank" class="btn-whatsapp">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square text-white"><path d="M21 15a2 3 0 0 1-2 2H7l-4 4V5a2 3 0 0 1 2-2h14a2 3 0 0 1 2 2z"/></svg>
                     Quero que agilizem pra mim!!!
                 </a>
             </div>
@@ -770,8 +777,8 @@
             }
             // Countdown timer
             const countdownTimer = document.getElementById('countdown-timer');
-            // Target date is October 27, 2025, 14:00:00 (since the event is 27/10* or 02/11* a partir das 14h, using 27/10 as the primary target for the calculation)
-            const targetDate = new Date('October 27, 2025 14:00:00').getTime(); 
+            // Target date is November 02, 2025, 14:00:00
+            const targetDate = new Date('November 02, 2025 14:00:00').getTime(); 
 
             function updateCountdown() {
                 const now = new Date().getTime();
